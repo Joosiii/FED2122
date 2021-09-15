@@ -1,5 +1,108 @@
-/* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --color1: #C8102E;
+    --color1b: #91182c;
+    --color2: #00B2A9;
+    --color3: #F6EB61;
 }
 
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--color1);
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    width: 70%;
+    margin: auto;
+    background-color: white;
+}
+
+header img {
+    max-width: 75px;
+    max-height: 75px;
+}
+
+header nav {
+    flex-grow: 1;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav li {
+    flex-grow: 1;
+}
+
+header nav a {
+    background-color: var(--color1);
+    text-decoration: none;
+    color: white;
+    outline: none;
+    display: flex;
+    line-height: 3.5em;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    text-transform: uppercase;
+}
+
+header nav a:hover {
+    background-color: var(--color1b);
+}
+
+header #undernav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1em 2em;
+}
+
+header #socials {
+    list-style: none;
+    display: flex;
+}
+
+header #socials a {
+    background-color: white;
+    text-decoration: none;
+    color: var(--color1);
+    outline: none;
+    line-height: 2em;
+    margin-left: 1em;
+}
+
+header #socials a:hover {
+    color: var(--color1b);
+}
+
+footer {
+    background-color: var(--color1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: white;
+}
