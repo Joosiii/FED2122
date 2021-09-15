@@ -40,11 +40,14 @@ https://www.liverpoolfc.com/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Homepage 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+<img src="images/Schermafbeelding 2021-09-15 151852.png" width="375px" alt="homescreen1">
+<img src="images/Schermafbeelding 2021-09-15 151933.png" width="375px" alt="homescreen2">
+<img src="images/Schermafbeelding 2021-09-15 151956.png" width="375px" alt="homescreen3">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+<img src="images/Schermafbeelding 2021-09-15 152134.png" width="375px" alt="fixturesscreen1">
+<img src="images/Schermafbeelding 2021-09-15 152159.png" width="375px" alt="fixturesscreen2">
  
 </details>
 
