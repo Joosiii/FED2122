@@ -10,8 +10,8 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href=""><img src="images/lfclogo.png" alt="Liverpool Logo"></a></li>
+            <a href="" class="logo"><img src="images/lfclogo.png" alt="Liverpool Logo"></a>
+            <ul class="menu">
                 <li><a href="">News</a></li>
                 <li><a href="">Match Center</a></li>
                 <li><a href="">Fixtures</a></li>
@@ -23,6 +23,11 @@
                 <li><a href="">Club</a></li>
                 <li><a href="">Help</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
         <section id="undernav">
         <p>You are here: Home</p>
@@ -36,22 +41,25 @@
         </ul>
         </section>
     </header>
-    <section>
+    <section id="wedstrijden">
         <ul>
             <li>
-                <img src="" alt="Thuisteam Wedstrijd 1">
-                <p>Tijd</p>
-                <img src="" alt="Uitteam Wedstrijd 1">
+                <img src="images/lfclogo.png" alt="Thuisteam Wedstrijd 1">
+                <p> 3 - 0 </p>
+                <img src="images/cpfclogo.png" alt="Uitteam Wedstrijd 1">
+                <p>18 / 09 / 2021</p>
             </li>
             <li>
-                <img src="" alt="Thuisteam Wedstrijd 2">
-                <p>Tijd</p>
-                <img src="" alt="Uitteam Wedstrijd 2">
+                <img src="images/bfclogo.png" alt="Thuisteam Wedstrijd 2">
+                <p> VS </p>
+                <img src="images/lfclogo.png" alt="Uitteam Wedstrijd 2">
+                <p>25 / 09 / 2021</p>
             </li>
             <li>
-                <img src="" alt="Thuisteam Wedstrijd 3">
-                <p>Tijd</p>
-                <img src="" alt="Uitteam Wedstrijd 3">
+                <img src="images/fcplogo.png" alt="Thuisteam Wedstrijd 3">
+                <p> VS </p>
+                <img src="images/lfclogo.png" alt="Uitteam Wedstrijd 3">
+                <p>28 / 09 / 2021</p>
             </li>
         </ul>
     </section>
@@ -91,8 +99,8 @@
     </section>
     <footer>
         <section></section>
-        <section>
-            <img src="" alt="Liverpool Logo Wit">
+        <section id="footerlinks">
+            <img src="images/lfclogowhite.png" alt="Liverpool Logo Wit">
             <ul>
                 <li><a href="">Privacy Policy</a></li>
                 <li><a href="">Terms and Conditions</a></li>
@@ -107,4 +115,7 @@
         </section>
     </footer>
 </body>
+
+<script src="script/script.js"></script>
+
 </html>

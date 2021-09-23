@@ -7,6 +7,12 @@
     --color3: #F6EB61;
 }
 
+
+
+/*****************/
+/* Algemene Code */
+/*****************/
+
 *,
 html {
     margin: 0;
@@ -14,80 +20,141 @@ html {
     box-sizing: border-box;
 }
 
-html {
-    background-color: var(--color1);
-}
-
 body {
     font-family: "Quicksand", sans-serif;
-    width: 70%;
+    width: 100%;
     margin: auto;
     background-color: white;
 }
 
+
+
+/***************/
+/* Header Code */
+/***************/
+
 header img {
-    max-width: 75px;
-    max-height: 75px;
+    max-width: 40px;
+    max-height: 40px;
+    margin: auto;
+}
+
+
+
+.menu {
+    background-color: var(--color1);
+    display: none;
+}
+
+.menu.active {
+    display: block;
 }
 
 header nav {
-    flex-grow: 1;
-}
-
-header nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-header nav li {
-    flex-grow: 1;
+    position: sticky;
 }
 
 header nav a {
-    background-color: var(--color1);
     text-decoration: none;
     color: white;
     outline: none;
     display: flex;
-    line-height: 3.5em;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 60px;
     text-transform: uppercase;
+    border-top: solid 1px rgba(255, 255, 255, 0.25);
 }
 
-header nav a:hover {
-    background-color: var(--color1b);
+.logo {
+    background-color: var(--color1);
 }
 
-header #undernav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 1em 2em;
+.hamburger {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 1em;
+    right: 1em;
 }
 
-header #socials {
-    list-style: none;
-    display: flex;
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
 }
 
-header #socials a {
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
     background-color: white;
-    text-decoration: none;
-    color: var(--color1);
-    outline: none;
-    line-height: 2em;
-    margin-left: 1em;
 }
 
-header #socials a:hover {
-    color: var(--color1b);
+header #undernav,
+header #socials {
+    display: none;
 }
+
+
+
+/*************/
+/* Main Code */
+/*************/
+
+#wedstrijden {
+    background-color: var(--color1);
+    padding: 2em 2em;
+    margin-top: 0.4em;
+}
+
+#wedstrijden ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+}
+
+#wedstrijden li {
+    padding: 1.5em 1.5em;
+    background-color: var(--color1b);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#wedstrijden img {
+    margin: 0 1em;
+    margin-bottom: 1em;
+    max-width: 75px;
+    max-height: 75px;
+}
+
+#wedstrijden p {
+    color: white;
+    font-weight: bold;
+}
+
+#wedstrijden p:nth-of-type(2n) {
+    color: white;
+    font-weight: normal;
+}
+
+
+
+
+/***************/
+/* Footer Code */
+/***************/
 
 footer {
     background-color: var(--color1);
@@ -97,12 +164,184 @@ footer {
     align-items: center;
 }
 
-footer ul {
-    list-style: none;
-    display: flex;
+#footerlinks {
+    padding: 1em 0;
 }
 
-footer ul a {
-    text-decoration: none;
+#footerlinks ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 1em;
+    width: 80%;
+    margin: auto;
+}
+
+#footerlinks ul li {
+    display: inline;
+    border-right: solid 1px white;
+}
+
+#footerlinks ul li:last-of-type {
+    border-right: none;
+}
+
+#footerlinks ul a {
     color: white;
+    padding: 0 .5em;
+    font-size: 14px;
+}
+
+#footerlinks img {
+    max-height: 75px;
+    max-width: 75px;
+    display: block;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+
+
+@media (min-width:38em) {
+
+    /*****************/
+    /* Algemene Code */
+    /*****************/
+
+    html {
+        background-color: var(--color1);
+        background-image: url("../images/backgroundstadium.jpg");
+        background-size: cover;
+    }
+
+    body {
+        width: 65%;
+    }
+
+
+
+    /***************/
+    /* Header Code */
+    /***************/
+
+    header img {
+        max-width: 75px;
+        max-height: 75px;
+    }
+
+
+
+    header nav {
+        flex-grow: 1;
+    }
+
+    header nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav li {
+        display: block;
+        flex-grow: 1;
+    }
+
+    header nav a {
+        background-color: var(--color1);
+        text-decoration: none;
+        color: white;
+        outline: none;
+        display: flex;
+        line-height: 3.5em;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        text-transform: uppercase;
+    }
+
+    header nav a:hover {
+        background-color: var(--color1b);
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+
+
+    header #undernav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1em 2em;
+    }
+
+
+
+    header #socials {
+        list-style: none;
+        display: flex;
+    }
+
+    header #socials a {
+        background-color: white;
+        text-decoration: none;
+        color: var(--color1);
+        outline: none;
+        line-height: 2em;
+        margin-left: 1em;
+    }
+
+    header #socials a:hover {
+        color: var(--color1b);
+    }
+
+
+
+    /*************/
+    /* Main Code */
+    /*************/
+
+    #wedstrijden {
+        background-color: var(--color1);
+        padding: 4em 4em;
+    }
+
+    #wedstrijden ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 3em;
+    }
+
+    #wedstrijden li {
+        padding: 2em 2em;
+        background-color: white;
+    }
+
+
+
+    /***************/
+    /* Footer Code */
+    /***************/
+
+    footer {
+        background-color: var(--color1);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer ul {
+        list-style: none;
+        display: flex;
+    }
+
+    footer ul a {
+        text-decoration: none;
+        color: white;
+    }
 }
