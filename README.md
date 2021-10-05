@@ -22,7 +22,7 @@ Joost Verweijen
 Rood
 
 #### Je focus:
-Surface Plane
+Surface Plane & Responsiveness
  
 </details>
 
