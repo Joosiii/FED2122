@@ -61,10 +61,10 @@ Fixtures Page<br>
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="images/schets1.png" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/schets2.png" width="375px" alt="breakdown van een dynamisch deel">
 
 </details>
 
@@ -129,12 +129,18 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 Blinde mensen surfen over het internet door gebruik te maken van screenreaders, het is dus belangrijk om je website hier goed op af te stellen.
 
 Je kan je website hiervoor toegankelijk maken door duidelijke alternatieve titels voor je afbeeldingen in te stellen, focus states te gebruiken bij je links en al je elementen duidelijke benamingen te geven.
+ 
+<img src="images/foto1.jfif" width="375px" alt="testfoto1">
+<img src="images/foto2.jfif" width="375px" alt="testfoto2">
+<img src="images/foto3.jfif" width="375px" alt="testfoto3">
 
 
 #### Slechtziend
 Er zijn ook mensen die niet helemaal blind zijn, maar een beperkt zicht hebben. Deze mensen gebruiken niet altijd screenreaders maar lopen toch wel eens tegen problemen aan bij het bekijken van een website.
 
 Vanwege deze doelgroep is het essentieel om ervoor te zorgen dat de contrasten binnen je website op orde zijn. Wanneer je bijvoorbeeld rode tekst op een zwarte achtergrond hebt is dit heel moeilijk te lezen, in vergelijking met zwart op wit, want dan weer het beste contrast is. Uiteraard is dit niet voor ieder slechtziend persoon hetzelfde en heeft ieder zijn voorkeuren qua kleuren, dus je website afstellen op iedereen zou niet haalbaar zijn.
+ 
+<img src="images/foto4.jfif" width="375px" alt="testfoto4">
 
 
 #### Motorische problemen
@@ -179,7 +185,14 @@ Het is tijd om de website af te ronden! Ten eerste heb ik de tweede pagina gemaa
 
 ### Screenshot(s)
 
-hier screenshot(s) van je eindresultaat
+<img src="images/screen1.png" width="375px" alt="screenshot 1">
+<img src="images/screen2.png" width="375px" alt="screenshot 2">
+ <img src="images/screen3.png" width="375px" alt="screenshot 3">
+ <img src="images/screen4.png" width="375px" alt="screenshot 4">
+ <img src="images/screen5.png" width="375px" alt="screenshot 5">
+ <img src="images/screen6.png" width="375px" alt="screenshot 6">
+ <img src="images/screen7.png" width="375px" alt="screenshot 7">
+ <img src="images/screen8.png" width="375px" alt="screenshot 8">
 
 </details>
 
