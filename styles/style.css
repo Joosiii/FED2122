@@ -50,10 +50,6 @@ header img {
     display: block;
 }
 
-header nav {
-    position: sticky;
-}
-
 header nav a {
     text-decoration: none;
     color: white;
@@ -149,7 +145,205 @@ header #socials {
     font-weight: normal;
 }
 
+#wedstrijden button {
+    color: var(--color1);
+    background-color: white;
+    width: 100%;
+    margin: 2em 4em 0 4em;
+    border-style: none;
+    border-radius: 0;
+    padding: 1em 2em;
+    font-family: 'Quicksand', sans-serif;
+}
 
+#wedstrijden button:hover {
+    background-color: var(--color2);
+    color: white;
+}
+
+
+
+#videos {
+    background-color: var(--color2);
+    padding-top: 0.5em;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+}
+
+#videos::-webkit-scrollbar {
+    display: none;
+}
+
+#videos article {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 325px;
+    margin: 1.5em 0 1.5em 1.5em;
+    padding: 1em;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+#videos article:last-of-type {
+    margin-right: 1.5em;
+}
+
+#videos article video {
+    max-height: 150px;
+}
+
+#videos article h3 {
+    margin-top: 0.5em;
+}
+
+#videos article p {
+    color: grey;
+    padding-top: 1em;
+    font-size: 0.8em;
+}
+
+
+
+#latestnews {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.5em;
+}
+
+#latestnews h2 {
+    color: var(--color1);
+    text-transform: uppercase;
+    margin-top: 1em;
+}
+
+#latestnews article {
+    margin-top: 0.5em;
+    background-color: #e4e4e4;
+    display: flex;
+}
+
+#latestnews article:last-of-type {
+    margin-bottom: 1em;
+}
+
+#latestnews p {
+    color: var(--color1);
+    font-weight: normal;
+    font-size: 0.9em;
+}
+
+#latestnews img {
+    height: 85px;
+    width: 150px;
+}
+
+#latestnews h3 {
+    margin: 0 0.5em;
+    font-size: 1em;
+}
+
+#latestnews h3:hover {
+    color: var(--color1);
+}
+
+
+
+/****************/
+/* Main Pagina 2*/
+/****************/
+
+.page2 h2 {
+    width: 100%;
+    padding: 1em 2em;
+    margin-top: 0.2em;
+    color: white;
+    background-color: var(--color1);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.page2 #table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12px;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.page2 #table th,
+.page2 #table td {
+    border: 2px solid white;
+    padding: 0.5em;
+    text-align: center;
+    color: black;
+}
+
+.page2 #table th {
+    background-color: var(--color1);
+    color: white;
+}
+
+.page2 #table td {
+    background-color: whitesmoke;
+}
+
+.page2 #table tr:nth-child(2n) td {
+    background-color: white;
+}
+
+.page2 #table tr:nth-child(3) td {
+    color: var(--color1);
+    font-weight: bold;
+}
+
+.page2 #table tr:nth-child(3):hover td:nth-of-type(2):after {
+    content: ' a.k.a. THE CHAMPIONS';
+    max-width: 5em;
+}
+
+
+
+.page2 h3 {
+    padding: 1em 0;
+    margin: 0 1em;
+    border-bottom: 3px solid var(--color1);
+}
+
+.page2 #fixt {
+    border-collapse: collapse;
+    width: calc(100% - 4em);
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    font-size: 12px;
+}
+
+.page2 #fixt th,
+.page2 #fixt td {
+    border-bottom: 2px solid whitesmoke;
+    padding: 0.5em;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.page2 #fixt td {
+    background-color: white;
+}
+
+.page2 #fixt img {
+    max-height: 30px;
+}
+
+.page2 #fixt td:nth-of-type(3),
+.page2 #fixt td:nth-of-type(5),
+.page2 #fixt td:nth-of-type(7) {
+    display: none;
+}
 
 
 /***************/
@@ -199,9 +393,26 @@ footer {
     margin-bottom: 1em;
 }
 
+footer p {
+    color: white;
+    font-size: 14px;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 80%;
+}
+
+footer p:first-of-type {
+    margin-top: 2em;
+}
+
+footer p:last-of-type {
+    margin-bottom: 2em;
+}
 
 
-@media (min-width:38em) {
+@media (min-width:49em) {
 
     /*****************/
     /* Algemene Code */
@@ -214,7 +425,7 @@ footer {
     }
 
     body {
-        width: 65%;
+        width: 80em;
     }
 
 
@@ -242,6 +453,10 @@ footer {
         justify-content: center;
     }
 
+    .menu {
+        display: flex
+    }
+
     header nav li {
         display: block;
         flex-grow: 1;
@@ -264,6 +479,10 @@ footer {
         background-color: var(--color1b);
     }
 
+    header nav a:focus {
+        background-color: var(--color1b);
+    }
+
     .hamburger {
         display: none;
     }
@@ -283,6 +502,11 @@ footer {
     header #socials {
         list-style: none;
         display: flex;
+        align-items: center;
+    }
+
+    header #socials li {
+        max-height: 25px;
     }
 
     header #socials a {
@@ -298,11 +522,15 @@ footer {
         color: var(--color1b);
     }
 
+    header #socials img {
+        max-height: 25px;
+    }
 
 
-    /*************/
-    /* Main Code */
-    /*************/
+
+    /*****************/
+    /* Main Pagina 1 */
+    /*****************/
 
     #wedstrijden {
         background-color: var(--color1);
@@ -318,7 +546,86 @@ footer {
 
     #wedstrijden li {
         padding: 2em 2em;
-        background-color: white;
+        background-color: var(--color1b);
+    }
+
+
+    @keyframes video-animation {
+        0% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(1.1);
+        }
+    }
+
+    #videos article:hover {
+        animation-name: video-animation;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+
+
+
+    #latestnews {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        grid-gap: 1em;
+    }
+
+    #latestnews h2 {
+        grid-column: 1 / -1;
+    }
+
+    #latestnews article {
+        height: 119px;
+    }
+
+    #latestnews p {
+        font-size: 0.9em;
+    }
+
+    #latestnews h3 {
+        margin-right: 0.5em;
+    }
+
+    #latestnews img {
+        height: 119px;
+        width: 210px;
+    }
+
+
+
+    /****************/
+    /* Main Pagina 2*/
+    /****************/
+
+    .page2 h2 {
+        text-align: left;
+    }
+
+    .page2 #table {
+        width: calc(100% - 4em);
+        font-size: 14px;
+    }
+
+
+
+    .page2 h3 {
+        margin: 0 2em;
+    }
+
+    .page2 #fixt {
+        width: calc(100% - 4em);
+        font-size: 14px;
+    }
+
+    .page2 #fixt td:nth-of-type(3),
+    .page2 #fixt td:nth-of-type(5),
+    .page2 #fixt td:nth-of-type(7) {
+        display: table-cell;
     }
 
 
@@ -335,13 +642,56 @@ footer {
         align-items: center;
     }
 
-    footer ul {
+    #footerlinks ul {
         list-style: none;
-        display: flex;
+        width: 100%;
     }
 
     footer ul a {
-        text-decoration: none;
         color: white;
+    }
+
+    footer p {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 79em) {
+    body {
+        width: 100%;
+    }
+
+    header img {
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+    header nav a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 61em) {
+    #wedstrijden img {
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+    #wedstrijden ul {
+        grid-template-columns: none;
+    }
+
+    #latestnews article {
+        max-height: 85px;
+    }
+
+    #latestnews img {
+        max-height: 85px;
+    }
+
+    #latestnews h3 {
+        font-size: 0.8em;
     }
 }
